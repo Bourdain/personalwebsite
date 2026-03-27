@@ -10,7 +10,7 @@ import Contact from './sections/Contact';
 
 function AppContent() {
   return (
-    <div className="bg-slate-900 dark:bg-slate-950 text-white">
+    <div className="bg-white dark:bg-slate-950 text-slate-900 dark:text-white">
       <TopNavBar />
       <Hero />
       <Projects />

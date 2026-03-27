@@ -1,11 +1,11 @@
 import React from 'react';
 
 const SkillCategory = ({ category, skills }) => (
-  <div className="bg-slate-800 dark:bg-slate-900 rounded-lg p-6 hover:bg-slate-700 dark:hover:bg-slate-800 transition-colors duration-300">
-    <h3 className="text-xl font-bold text-blue-400 mb-4">{category}</h3>
+  <div className="bg-white dark:bg-slate-900 rounded-lg p-6 hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors duration-300 border border-slate-200 dark:border-slate-700">
+    <h3 className="text-xl font-bold text-blue-600 dark:text-blue-400 mb-4">{category}</h3>
     <div className="flex flex-wrap gap-2">
       {skills.map((skill, idx) => (
-        <span key={idx} className="px-4 py-2 bg-slate-700 dark:bg-slate-800 text-gray-200 rounded-full text-sm font-medium hover:bg-blue-600 hover:text-white transition-colors duration-300">
+        <span key={idx} className="px-4 py-2 bg-blue-100 dark:bg-slate-800 text-blue-700 dark:text-gray-200 rounded-full text-sm font-medium hover:bg-blue-200 dark:hover:bg-slate-700 transition-colors duration-300">
           {skill}
         </span>
       ))}
@@ -42,12 +42,12 @@ const Skills = () => {
   ];
 
   return (
-    <section id="skills" className="min-h-screen bg-slate-950 dark:bg-slate-900 px-6 py-20">
+    <section id="skills" className="min-h-screen bg-white dark:bg-slate-950 px-6 py-20">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-4xl md:text-5xl font-bold text-white mb-4 text-center">
+        <h2 className="text-4xl md:text-5xl font-bold text-slate-900 dark:text-white mb-4 text-center">
           Skills & Technologies
         </h2>
-        <p className="text-gray-400 text-center mb-16 max-w-2xl mx-auto">
+        <p className="text-slate-700 dark:text-gray-400 text-center mb-16 max-w-2xl mx-auto">
           A comprehensive overview of my technical expertise and tools I work with daily.
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">

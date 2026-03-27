@@ -47,19 +47,19 @@ const Contact = () => {
         {/* Contact Methods */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
           <ContactLink 
-            icon="📧" 
-            label="Email" 
-            href="mailto:cesarbour@example.com"
-          />
-          <ContactLink 
             icon="💼" 
             label="LinkedIn" 
-            href="https://linkedin.com"
+            href="https://www.linkedin.com/in/cesarbourdain/"
           />
           <ContactLink 
-            icon="🐙" 
+            icon="👨‍💻" 
             label="GitHub" 
-            href="https://github.com"
+            href="https://github.com/Bourdain"
+          />
+          <ContactLink 
+            icon="📧" 
+            label="Email" 
+            href="mailto:cesarbourdain@gmail.com"
           />
         </div>
       </div>

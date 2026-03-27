@@ -17,7 +17,7 @@ const Skills = () => {
   const skillCategories = [
     {
       category: "Backend",
-      skills: [".NET", "C#", "Node.js", "Python", "Java"]
+      skills: [".NET", "C#", "WPF", "ASP.NET", "Entity Framework", "Web Assembly", "Blazor"]
     },
     {
       category: "Automation",
@@ -25,11 +25,11 @@ const Skills = () => {
     },
     {
       category: "Integrations",
-      skills: ["REST APIs", "Message Brokers", "Data Integration", "ETL Pipelines"]
+      skills: ["REST APIs", "Message Brokers", "Data Integration", "Third-Party Services"]
     },
     {
       category: "Databases",
-      skills: ["SQL Server", "PostgreSQL", "MongoDB", "Azure SQL"]
+      skills: ["SQL Server", "PostgreSQL", "Azure SQL"]
     },
     {
       category: "Tools & Platforms",

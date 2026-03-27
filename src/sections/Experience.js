@@ -27,35 +27,48 @@ const ExperienceCard = ({ title, company, period, description, responsibilities 
 const Experience = () => {
   const experiences = [
     {
-      title: "Your Current/Latest Position",
-      company: "Company Name",
-      period: "Month Year - Present",
-      description: "Add your current role description here.",
+      title: "Owner/Operator",
+      company: "Print Play Protect",
+      period: "Feb 2023 - Present",
+      description: "Company Owner/Operator of our 3D printing and laser engraving business.",
       responsibilities: [
-        "Key responsibility or achievement",
-        "Another notable accomplishment",
-        "Technology or process improvement"
+        "Design and manufacture of custom printed products, laser engraved dice, and embroidered patches",
+        "Creation and maintenance of e-commerce tools and website using Blazor WebAssembly, PostgreSQL, and others.",
       ]
     },
     {
-      title: "Previous Position",
-      company: "Company Name",
-      period: "Month Year - Month Year",
-      description: "Add your previous role description here.",
+      title: "Senior Associate",
+      company: "PwC",
+      period: "Oct 2022 - Present",
+      description: "Software Engineer specializing in backend development, automation, and integrations. Responsible for designing and implementing scalable solutions to meet client needs.",
       responsibilities: [
-        "Key responsibility or achievement",
-        "Another notable accomplishment"
+        "Database design and management for client applications",
+        ".NET backend development for various projects",
+        "Integration of third-party services and APIs"
       ]
     },
     {
-      title: "Earlier Position",
-      company: "Company Name",
-      period: "Month Year - Month Year",
-      description: "Add your earlier role description here.",
+      title: ".NET Developer",
+      company: "Santander Portugal",
+      period: "Dec 2020 - Sep 2022",
+      description: "Software Engineer / Process Automation Developer.",
       responsibilities: [
-        "Key responsibility or achievement"
+        "Process Automation Specialist with Blue Prism, responsible for designing and implementing automation solutions to optimize business processes.",
+        "Backend development using .NET for various internal applications and tools.",
+        "Integration of systems and services to streamline operations and improve efficiency."
       ]
-    }
+    },
+    {
+      title: "Software Automation Engineer",
+      company: "Banque Internationale à Luxembourg (BIL)",
+      period: "Sep 2018 - Dec 2020",
+      description: "Spearheaded process automation initiatives as the lead developer for banking system processes, utilizing RPA Blue Prism.",
+      responsibilities: [
+        "Engineered and implemented software integrations with existing applications, showcasing proficiency in dotnet core and web API development.",
+        "Leveraged Entity Framework for SQL Access, streamlining database interactions and ensuring data integrity.",
+        "Implemented batch processing solutions tailored for the unique requirements of banking systems, enhancing overall system performance."
+      ]
+    },
   ];
 
   return (
@@ -71,6 +84,13 @@ const Experience = () => {
           {experiences.map((exp, idx) => (
             <ExperienceCard key={idx} {...exp} />
           ))}
+        </div>
+        <div className="mt-12 pl-8">
+          <a 
+            href="https://www.linkedin.com/in/cesarbourdain/" 
+            className="inline-block px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white text-sm font-semibold rounded transition-colors duration-300">
+            Learn More About My Career →
+          </a>
         </div>
       </div>
     </section>
